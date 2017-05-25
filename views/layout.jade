@@ -2,6 +2,12 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/_css/app.css')
   body
     block content
+    block library
+      script(src="./_js/jquery.min.js")
+      script(src="./socket.io/socket.io.js")
+      script(src="./_js/phaser.js")
+      //- script(src="./_js/phaser.min.js")
+      script(src="./bundle.js")
