@@ -2,6 +2,9 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+    block library
+      script(src="/socket.io/socket.io.js")
+      script(src="/_js/phaser.min.js")
+      script(src="http://localhost:8080/static/js/bundle.js")
